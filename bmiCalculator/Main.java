@@ -1,4 +1,4 @@
-package com.donatus.ibmCalculator;
+package com.donatus.bmiCalculator;
 
 import java.util.Scanner;
 
