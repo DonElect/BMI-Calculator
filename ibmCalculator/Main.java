@@ -20,13 +20,20 @@ public class Main {
         double result = (weight/Math.pow(height, 2)) * 10000.0;
 
         if(result >= 25){
-            System.out.println("Your BMI is "+result+ "\n"+"You are over WEIGHT!");
+            System.out.println("--------------------");
+            System.out.printf("Your BMI is %.2f",result);
+            System.out.println("kg/m2." + "\n"+"You are over WEIGHT!");
         }
         else if ((result >= 18.5)&&(result <= 24.9))
         {
-            System.out.println("Your BMI is "+result+ "\n"+"Your are HEALTHY");
+            System.out.println("--------------------");
+            System.out.printf("Your BMI is %.2f",result);
+            System.out.println("kg/m2." + "\n"+"Your are HEALTHY");
         }
-        else
-            System.out.println("Your BMI is "+result+ "\n"+"You are under weight");
+        else {
+            System.out.println("--------------------");
+            System.out.printf("Your BMI is %.2f", result);
+            System.out.println("kg/m2." + "\n" + "You are under weight");
+        }
     }
 }
